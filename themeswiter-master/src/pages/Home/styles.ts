@@ -116,6 +116,7 @@ export const Wrapper = styled.div`
 
     @media(max-width: 990px) {
         display: block;
+        margin-top: 100px;
 
         .img {
             display: none;

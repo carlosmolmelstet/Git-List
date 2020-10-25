@@ -16,7 +16,9 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   return (
       <Container>
           <div className="divlogo">
-            <img src={logo} alt=""/>
+            <a href="/">
+              <img src={logo} alt=""/>
+            </a>
           </div>
           <Switch 
             onChange={toggleTheme}

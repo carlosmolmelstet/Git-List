@@ -8,8 +8,9 @@ import dark from './styles/theme/dark';
 
 import GlobalStyle from './styles/global';
 import Header from './components/Header';
-import Home from './pages/Home';
 import Routes from './routes';
+
+
 
 function App() {
   const [theme, setTheme] = usePersistetState<DefaultTheme>('theme', light);
@@ -24,7 +25,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <GlobalStyle />
-        <Header toggleTheme={toggleTheme} />
+          <Header  toggleTheme={toggleTheme} />
         <Routes />
       </div>
     </ThemeProvider>

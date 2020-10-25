@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
     margin-top: 30px;
     margin-bottom: 30px;
 
+
     
 `;
 
@@ -38,6 +39,13 @@ export const Profile = styled.div`
     .description {
         display: flex;
         align-items: top;
+
+        .photo {
+            img {
+                border-radius: 50%;
+                max-width: 250px;
+            }
+        }
 
         .names {
             margin-left: 20px;
@@ -280,14 +288,14 @@ export const Repo = styled.div`
     h3 {
         color:  ${props => props.theme.colors.text};
         font-weight: 600;
-        font-size: 55px;
+        font-size: 40px;
         text-transform: uppercase;   
     } 
 
     p {
         color:  ${props => props.theme.colors.text};
         font-weight: 300;
-        font-size: 35px;
+        font-size: 20px;
         text-transform: uppercase;   
 
     }
@@ -343,9 +351,12 @@ export const Repo = styled.div`
     @media(max-width: 500px) { 
         border-radius: 25px;
 
+        h3 {
+            font-size: 25px
+        }
         p {
-        font-size: 20px;
-    }
+        font-size: 15px;
+        }
 
         .footerRepo {
             display: block;

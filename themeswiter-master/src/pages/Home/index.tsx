@@ -1,12 +1,35 @@
-import React from 'react';
-
+import React, { useState, useCallback } from 'react';
 import { Container, Wrapper } from './styles';
 
 import landing from '../../utils/images/landing.png';
 import search from '../../utils/images/search.svg';
+import Input from '../../components/Input';
 import { Link } from 'react-router-dom';
 
-const home: React.FC = () => {
+interface Usuario {
+    name: string;
+}
+
+
+const Home: React.FC = () => {
+    const [usuario, setUsuario] = useState<Usuario>({} as Usuario);
+    
+        
+    const handleChange = useCallback(
+        (e: React.FormEvent<HTMLInputElement>) => {
+            setUsuario({
+                ...usuario,
+                [e.currentTarget.name]: e.currentTarget.value,
+            });
+        },
+        [usuario]
+    );
+    
+    
+    
+    
+    const userName = usuario.name;
+  
   return (
       <Container>
           <Wrapper>
@@ -17,9 +40,9 @@ const home: React.FC = () => {
                 <div className="searchbox">
                     <div className="form">
                         <h1>PESQUISAR POR UM DEV</h1>
-                        <input value="" placeholder="USER" type="text"/> <br/>
-                        <Link style={{ textDecoration: 'none' }} to="/list">
-                            <button>
+                        <Input placeholder="USER" name="name" onChange={handleChange }/> <br/>
+                        <Link style={{ textDecoration: 'none' }}  to={`/list/${userName}`}>
+                            <button onClick={() => console.log(userName)} >
                             Pesquisar
                             <img src={search} alt=""/>
                             </button>
@@ -36,4 +59,4 @@ const home: React.FC = () => {
   );
 }
 
-export default home;
+export default Home;
