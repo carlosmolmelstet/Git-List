@@ -1,11 +1,11 @@
-# <h1 align="center">GIT LIST</h1>
+# <h1 align="center"><b>GIT LIST</b></h1>
 
 <p align="center">
   <a href="https://gitlist.vercel.app/">Deploy</a>
 </p>
 
 <p align="center">
-  <img alt="Happy" src="home.png" width="100%">
+  <img alt="Happy" src=".github/home.png" width="100%">
 </p>
 
 <br>
