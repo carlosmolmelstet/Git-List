@@ -1,4 +1,6 @@
-# <h1 align="center"><b>GIT LIST</b></h1>
+# <h1 align="center">
+    <img alt="Happy" src=".github/h1.png" width="80%">
+</h1>
 
 <p align="center">
   <a href="https://gitlist.vercel.app/">Deploy</a>
