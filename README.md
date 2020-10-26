@@ -1,4 +1,4 @@
-# <h1 align="center">GIT LIST</h1>
+# <h1 align="center"><b>GIT LIST</b></h1>
 
 <p align="center">
   <a href="https://gitlist.vercel.app/">Deploy</a>
