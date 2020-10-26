@@ -1,4 +1,4 @@
-# <h1 align="center">
+<h1 align="center">
     <img alt="Happy" src=".github/h1.png" width="80%">
 </h1>
 
