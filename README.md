@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img alt="Happy" src="home.png" width="100%">
+  <img alt="Happy" src=".github/home.png" width="100%">
 </p>
 
 <br>
